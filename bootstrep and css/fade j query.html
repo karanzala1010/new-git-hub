@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 29-3-24</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            background-color: orange;
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body class="m-5">
+
+    <button class="btn btn-primary" id="fdi">fadein</button>
+
+    <button class="btn btn-success" id="fdo">fadeout</button>
+
+    <button class="btn btn-warning" id="fdt">fadetoggle</button>
+
+    <button class="btn btn-warning" id="fdto">fadeto</button>
+
+    <div class="box"></div>
+    
+
+
+
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#fdi").click(function(){
+                $(".box").fadeIn();
+            })
+
+            $("#fdo").click(function(){
+                $(".box").fadeOut();
+            })
+
+            $("#fdt").click(function(){
+                $(".box").fadeToggle("slow");
+            })
+
+            // $("#fdto").click(function(){
+            //     $(".box").fadeTo("opacity:0.5ss");
+            // })
+        })
+    </script>
+</body>
+</html>

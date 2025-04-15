@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 4-3-24</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin: 30px;">
+
+    <!-- <button class="btn btn-warning " data-bs-toggle="collapse"  data-bs-target="#demo1"> collapse
+    </button> -->
+
+
+    <a href="#demo1" class="btn btn-link" data-bs-toggle="collapse"  >link</a>
+
+    <div class="collapse show" id="#demo1">
+        <p class="p-10">Lorem ipsum dolor sit amet consectetur adipisicing eli eius ipsa placeat iure nostrum tempore voluptas.</p>
+    </div>
+
+    <!-- <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a href="#cl1" data-bs-toggle="collapse">link 1</a></div>
+
+                <div class="collapse" id="cl1" data-bs-perent="#accordion">
+                    <div class="p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam iure fugit debitis. Corporis unde mollitia distinctio error, excepturi illum enim magni possimus consectetur magnam nostrum repellendus tempora dolores facilis adipisci?</div>
+                </div>
+            
+        </div>
+    
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#cl2" data-bs-toggle="collapse">link 2</a></div>
+
+                <div class="collapse" id="cl2" data-bs-perent="#accordion">
+                    <div class="p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam iure fugit debitis. Corporis unde mollitia distinctio error, excepturi illum enim magni possimus consectetur magnam nostrum repellendus tempora dolores facilis adipisci?</div>
+                </div>
+            
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#cl3" data-bs-toggle="collapse">link 3</a></div>
+
+                <div class="collapse" id="cl3" data-bs-perent="#accordion">
+                    <div class="p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam iure fugit debitis. Corporis unde mollitia distinctio error, excepturi illum enim magni possimus consectetur magnam nostrum repellendus tempora dolores facilis adipisci?</div>
+                </div>
+            
+        </div>
+
+    </div> -->
+    
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a href="#cl1" data-bs-toggle="collapse">card 1</a>
+            </div>
+
+            <div class="collapse " id="cl1" data-bs-parent="#accordion">
+                <div class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quibusdam fuga dolorem nemo corporis dolorum minima a perferendis eveniet voluptas voluptates tenetur, sit temporibus perspiciatis consequatur aperiam quis culpa numquam.</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#cl2" data-bs-toggle="collapse">card 2</a>
+            </div>
+
+            <div class="collapse" id="cl2" data-bs-parent="#accordion">
+                <div class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quibusdam fuga dolorem nemo corporis dolorum minima a perferendis eveniet voluptas voluptates tenetur, sit temporibus perspiciatis consequatur aperiam quis culpa numquam.</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#cl3" data-bs-toggle="collapse">card 3</a>
+            </div>
+
+            <div class="collapse" id="cl3" data-bs-parent="#accordion">
+                <div class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quibusdam fuga dolorem nemo corporis dolorum minima a perferendis eveniet voluptas voluptates tenetur, sit temporibus perspiciatis consequatur aperiam quis culpa numquam.</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

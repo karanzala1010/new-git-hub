@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test practice</title>
+    <style>
+        body{
+            padding: 0; margin: 0;
+        }
+
+        .head{
+            background-color: orange;
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .hevy{
+            height: 500px;
+
+        }
+
+        .main{
+            height: 50%;
+            width: 50%;
+            background-color: springgreen;
+            overflow: auto;
+            float: left;
+        }
+
+        .section{
+            height: 50%;
+            width: 50%;
+            background-color: rgb(26, 140, 253);
+            overflow: auto;
+            float: left;
+        }
+
+        .left{
+            height: 50%;
+            width: 100%;
+            background-color: rgb(212, 14, 64);
+            overflow: auto;
+            float: left;
+        }
+
+        @media(max-width:600px){
+            .main{
+                height: 100%;
+                width: 33%;
+                background-color: turquoise;
+            }
+
+            .section{
+                height: 100%;
+                width: 33%;
+                background-color: rgb(233, 18, 118);
+            }
+
+            .left{
+                height: 100%;
+                width: 34%;
+                background-color: rgb(231, 86, 19);
+                
+            }
+        }
+
+        @media(min-width:601px) and (max-width:800px){
+            .main{
+                height: 100%;
+                width: 50%;
+                background-color: rgb(233, 14, 6);
+            }
+
+            .section{
+                height: 50%;
+                width: 50%;
+                background-color: rgb(224, 240, 6);
+            }
+
+            .left{
+                height: 50%;
+                width: 50%;
+                background-color: rgb(43, 221, 7);
+                
+            }
+            }
+    </style>
+</head>
+<body>
+    <div class="head">header</div>
+
+    <div class="hevy">
+
+
+    <div class="main"></div>
+
+    <div class="section"></div>
+
+    <div class="left"></div>
+
+</div>
+
+    <div class="footer head">footer</div>
+
+    
+</body>
+</html>

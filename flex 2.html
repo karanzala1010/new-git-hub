@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        .box{
+            height: 100px;
+            border: 1px solid red;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            -flex-grow: 1;
+            flex-grow: 3;
+        
+        }
+
+        .inner-box{
+            -border: 1px solid magenta;
+            padding: 10px;
+            -display: flex;
+            -flex-direction: row;
+            flex-grow:1;
+            
+        }
+
+        .one{
+            border: 1px solid black;
+            -order: 5;
+            align-self:self-end;
+
+        }
+
+        .two{
+            border: 1px solid rgb(211, 17, 17);
+            -order: 3;
+            flex-shrink: 0;
+
+        }
+
+        .three{
+            border: 1px solid rgb(28, 1, 184);
+            -order: 4;
+
+        }
+        .four{
+            border: 1px solid rgb(0, 0, 0);
+            order: 1;
+            -flex-basis: 200px;
+
+        }
+
+        .five{
+            border: 1px solid rgb(0, 0, 0);
+            order: 2;
+
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="inner-box one">1</div>
+        <div class="inner-box two">2</div>
+        <div class="inner-box three">3</div>
+        <!-- <div class="inner-box four">4</div>
+        <div class="inner-box five">5</div>
+         -->
+        
+        
+    </div>
+    
+</body>
+</html>

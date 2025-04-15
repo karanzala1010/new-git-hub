@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>j-query start 27-3-24</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="m-5">
+
+    <button class="btn btn-dark " id="hide">hide</button>
+
+    <button class="btn btn-danger" id="show">show</button>
+
+    <button class="btn btn-warning" id="tgl">toggle</button>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem eius consequuntur explicabo necessitatibus consequatur officia quam excepturi. Facilis reprehenderit similique quae culpa tempora ab ex eius rem officia sit deserunt ducimus ad quaerat totam obcaecati, in omnis repudiandae beatae quasi, sapiente ullam! Vero minima nesciunt delectus, deleniti voluptas eius laudantium enim aut veritatis mollitia nostrum. Provident accusamus, quo placeat ullam aut quos iusto mollitia eius laborum molestiae. Dolorem, dolor, nulla error blanditiis quibusdam commodi vitae atque cum nostrum exercitationem fugiat, excepturi sequi perferendis? Eos voluptates libero quos corrupti consequatur provident, distinctio totam quia neque placeat suscipit, tenetur, adipisci quidem?
+    </div>
+    
+
+
+
+     <script src="js/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $(".box").hide();
+            })
+
+            $("#show").click(function(){
+                $(".box").show();
+            })
+
+            $("#tgl").click(function(){
+                $(".box").toggle();
+            })
+        })
+
+    </script>
+</body>
+</html>

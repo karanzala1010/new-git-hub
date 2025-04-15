@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 29-3-24</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="m-4">
+
+    <button class="btn btn-primary" id="up">slideup</button>
+
+    <button class="btn btn-secondary" id="down">slidedown</button>
+
+    <button class="btn btn-warning" id="toggle">slideToggle</button>
+
+    <button class="btn btn-warning" id="to">stop</button>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempora repudiandae officia inventore assumenda, incidunt minima voluptas aspernatur nam iste alias veritatis magnam quibusdam eveniet at vel est, dolorem atque.
+    </div>
+    
+
+
+
+
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#up").dblclick(function(){
+                $(".box").slideUp();
+            })
+
+            $("#down").mouseleave(function(){
+                $(".box").slideDown();
+            })
+
+            $("#toggle").click(function(){
+                $(".box").slideToggle(3000);
+            })
+
+            $("#to").click(function(){
+                $(".box").stop();
+            })
+        })
+
+    </script>
+</body>
+</html>

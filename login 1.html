@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        .login-box{
+            width: 500px;
+            padding: 15px;
+            margin: auto;
+            background-color: gray;
+            border-radius: 5px;
+        }
+
+        h2,p{
+            text-align: center;
+            color: aliceblue;
+        }
+        .login-box label{
+            display: block;
+            margin-bottom: 5px;
+
+        }
+
+        .login-box input{
+            width: 100%;
+            border-radius: 5px;
+            padding: 10px;
+            -display: block;
+            margin: auto;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .login-box .sub{
+            -color: blueviolet;
+            text-align: center;
+            padding: 10px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <center><img src="images/kudarti.jpg" class="lo" width="150px"></center>
+
+        <h2>login</h2>
+        <p>please enter your username or password</p>
+
+        <form action="">
+            <label>username</label>
+            <input type="text" placeholder="name">
+
+            <label>password</label>
+            <input type="password" placeholder="password">
+
+            <p style="text-align: right;">
+                <a href="#">forgot password</a>
+            </p>
+
+            <input type="submit" class="sub">
+        </form>
+    </div>
+    
+</body>
+</html>

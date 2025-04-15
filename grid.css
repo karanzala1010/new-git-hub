@@ -1,0 +1,41 @@
+/* Basic Reset for demo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the grid layout */
+  .grid-container {
+    display: grid;
+    gap: 10px; /* Adjust the gap between grid items as needed */
+  }
+  
+  /* Large screens (1200px and above) */
+  @media (min-width: 1200px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* Three columns */
+    }
+  }
+  
+  /* Medium screens (576px to 1199px) */
+  @media (min-width: 576px) and (max-width: 1199px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+  }
+  
+  /* Small screens (smaller than 576px) */
+  @media (max-width: 575px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Single column */
+    }
+  }
+  
+  /* Example item styling */
+  .grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  

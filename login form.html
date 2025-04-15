@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: wheat;
+        }
+
+        .login-box{
+            background-color: #fff;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 35px;
+            margin-top: 35px;
+            border: solid burlywood;
+        }
+
+        .login-box .logo{
+            width: 200px;
+            display: block;
+            margin: auto;
+        }
+
+        .login-box h2,
+        .login-box p{
+            text-align: center;
+        }
+
+        .login-box label{
+            display: block;
+            font-size: 14px;
+            padding-bottom: 5px;
+            
+
+        }
+
+        .login-box input{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        }
+
+        .login-box .sub{
+            background-color: blue;
+            padding: 15px;
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <img src="images/logo.avif" class="logo">
+
+        <h2>login</h2>
+        <p>please enter your user name or password</p>
+        <form action="">
+            <label>username</label>
+            <input type="text" placeholder="name">
+
+            <label>password</label>
+            <input type="password" placeholder="password">
+
+            <p style="text-align: right;">
+                <a href="#">forgot password</a>
+            </p>
+
+            <input type="submit" class="sub">
+        </form>
+    </div>
+    
+</body>
+</html>

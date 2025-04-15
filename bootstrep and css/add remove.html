@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 3-4-24</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .red{
+            color: rgb(247, 45, 10);
+        }
+
+        .blue{
+            color: rgb(7, 39, 221);
+        }
+    </style>
+</head>
+<body class="m-5">
+    
+    <button class="btn btn-info" id="add">remove</button>
+
+    <button class="btn btn-danger" id="rem">add</button>
+
+    <h3 class="blue">hello how are you</h3>
+
+    <h4>this is a simpal demo</h4>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#rem").click(function(){
+                $(".blue").removeClass("blue")
+            })
+
+            $("#add").click(function(){
+                $("h3").addClass("red")
+            })
+        })
+    </script>
+</body>
+</html>
